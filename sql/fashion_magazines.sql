@@ -7,4 +7,4 @@ JOIN subscriptions
     ON orders.subscription_id = subscriptions.subscription_id
 WHERE orders.order_status = 'unpaid'
     AND subscriptions.description = 'Fashion Magazine'
-GROUP BY customerS.customer_name;
+GROUP BY customers.customer_name;
